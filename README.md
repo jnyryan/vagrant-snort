@@ -1,20 +1,29 @@
 #vagrant_snort
 =============
 
-SNORT Intrusion Detection System set up on a vagrant virtual machine. Ideal for quick home testing
+Setup SNORT Intrusion Detection System on a vagrant virtual machine. Ideal for quick home testing.
 
 ##Overview
-This runs Ubuntu12.04 LTS configured over a bridged network.
 
-Snort is configureed to read it's configuration from the shared folder (TODO)
-SNORT is configured to write it's logs to the shared folder (TODO)
-I may add the visual tools (TODO)
+VagrantUP is a cool virtualization tech that uses VirtualBox to create a virtual machine. 
+The VagrantFile instructs VagrantUp to download an Ubuntu image and run an install script on it.
+
+This setup will:
+
+- run Ubuntu12.04 LTS configured over a bridged network.
+- Snort is configured to read it's configuration from the shared folder (TODO)
+- SNORT is configured to write it's logs to the shared folder (TODO)
+- I may add the visual tools (TODO)
  
 ##QuickStart.
 
-Install VirtualBox
-vagrant box add precise64 http://files.vagrantup.com/precise64.box
-vagrant up
+- Install [VirtualBox](https://www.virtualbox.org/)
+- Install [vagrantup](http://www.vagrantup.com/)
+- Clone this repoitory
+- Run 
+```
+  vagrant up
+```
 
 ##References
 
